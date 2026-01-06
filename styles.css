@@ -587,3 +587,109 @@ footer::after {
 .footer-link:hover {
     opacity: 1;
 }
+
+
+/*СТИЛИ СТАТЬИ*/
+
+.article-heading{
+    
+    width: 690px;
+    height: 168px;
+    margin-top: 54px;
+    
+    
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    line-height: 56px;
+    color: #333333;
+    font-weight: 700;
+}
+
+.article-author{
+    white-space: nowrap;
+    width: 240px;
+    height: 20px;
+    margin-top: 16px;
+    gap: 8px;
+
+    color: #494949;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.article-picture_1{
+    width: 690px;
+    height: 331px;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.sidebar-booking{
+    position: absolute;
+    width: 282px;
+    height: 512px;
+    background-color: #E6F0FD;
+    top: 100px; 
+    left: 1038px; 
+    border-radius: 16px;
+    padding: 24px;
+    
+}
+
+.sidebar-picture_2{
+    width: 257px;
+    height: 206px;
+}
+
+.sidebar-booking-heading{
+    width: 234px;
+    height: 54px;
+    gap: 16px;
+    margin-top: 24px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    text-align: center;
+}
+
+.sidebar-booking-text{
+    width: 234px;
+    height: 100px;
+    margin-top: 8px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20x;
+    color: #333333;
+    text-align: center;
+}
+
+.sidebar-booking-button{
+    border: none;        
+    outline: none;
+
+    width: 234px;
+    height: 48px;
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    gap: 8px;
+    background-color: #35B3A9;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 16px;
+    line-height: 24x;
+    color: #FFFFFF;
+    text-align: center;
+}
