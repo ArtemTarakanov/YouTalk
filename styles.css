@@ -666,7 +666,7 @@ footer::after {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 20x;
+    line-height: 20px;
     color: #333333;
     text-align: center;
 }
@@ -689,7 +689,612 @@ footer::after {
     font-weight: 700;
     font-style: bold;
     font-size: 16px;
-    line-height: 24x;
+    line-height: 24px;
     color: #FFFFFF;
     text-align: center;
+    margin-top: 24px;
+}
+
+/* Стили для содержания статьи (TOC) */
+.article-toc {
+    margin-top: 24px;
+    width: 588px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.toc-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin: 0;
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.toc-item {
+    position: relative;
+    padding-left: 32px;
+}
+
+.toc-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+.toc-item::after {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background: #03B2A5;
+    border-radius: 50%;
+}
+
+.toc-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    text-decoration: underline;
+    display: block;
+}
+
+/* Для первого пункта (многострочного) */
+.toc-item:first-child .toc-link {
+    height: 48px;
+}
+
+/* Вложенные списки */
+.toc-sublist {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+}
+
+.toc-subitem {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 0;
+}
+
+/* Отступы для уровней вложенности */
+.toc-sublist .toc-subitem {
+    padding-left: 20px;
+}
+
+.toc-sublist .toc-sublist .toc-subitem {
+    padding-left: 10px;
+}
+
+.toc-sublist .toc-sublist .toc-sublist .toc-subitem {
+    padding-left: 10px;
+}
+
+.article-heading-h3{
+    width: 173px;
+    height: 32px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+
+    margin-top: 24px;
+}
+
+.article-heading-h3-content{
+    margin-top: 16px;
+
+}
+
+.article-content{
+    margin-top: 16px;
+    width: 690px;
+    height: 144px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.article-quote {
+    width: 690px;
+    height: 162px;
+    margin-top: 40px;
+    border-radius: 16px;
+    background-color: #F3F7FE;
+    position: relative; 
+    padding: 24px; 
+    box-sizing: border-box; 
+}
+
+.article-quote-image {
+    width: 56px; 
+    height: 36px;
+    position: absolute; 
+    left: 24px; 
+    top: 24px;  
+}
+
+.quote-text{
+    width: 642px;
+    height: 82px;
+    color: #333333;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+
+    position: absolute;
+    top: 34px;
+    left: 24px;
+}
+
+.quote-author{
+    white-space: nowrap;
+    width: 127px;
+    height: 24px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+
+    position: absolute;
+    top: 114px;
+    left: 24px;
+}
+
+/* Карточка психолога */
+.psychologist-card {
+    position: absolute;
+    width: 282px;
+    height: 481px;
+    top: 640px;
+    left: 1038px;
+
+    filter: drop-shadow(0px 30px 50px #EFF5FB);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    gap: 16px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 16px;
+}
+
+
+/* Бейджи сверху */
+.card-badges {
+    position: absolute;
+    width: 105px;
+    height: 56px;
+    left: 16px;
+    top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.badge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 6px;
+    gap: 4px;
+    background: rgba(243, 244, 248, 0.7);
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+}
+
+/* Аватар */
+.psychologist-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    overflow: hidden;
+}
+
+.psychologist-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Информация о психологе */
+.psychologist-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    width: 250px;
+    height: 76px;
+}
+
+.psychologist-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+    margin: 0;
+}
+
+.psychologist-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin: 0;
+}
+
+.psychologist-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 20px;
+}
+
+.stat-experience,
+.stat-age {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #A2A7B1;
+}
+
+.stat-dot {
+    width: 4px;
+    height: 4px;
+    background: #A2A7B1;
+    border-radius: 50%;
+}
+
+/* Разделитель */
+.card-divider {
+    width: 250px;
+    height: 1px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 0px #DEDEDE;
+    flex-shrink: 0;
+}
+
+/* Специализация */
+.specialization {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 250px;
+}
+
+.specialization-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin: 0;
+}
+
+.specialization-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.specialization-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    position: relative;
+    padding-left: 20px;
+}
+
+.specialization-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    background: #03B2A5;
+    border-radius: 50%;
+}
+
+/* Кнопка */
+.psychologist-button {
+    border: none;        
+    outline: none;
+    width: 250px;
+    height: 48px;
+    border-radius: 4px;
+    padding: 12px 16px;
+    background-color: #35B3A9;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.sidebar-picture_2{
+    position: absolute;
+    width: 282px;
+    height: 292px;
+    top: 1150px;
+    left: 1038px;
+}
+
+.sidebar-videos {
+    position: absolute;
+    width: 282px;
+    height: 304px;
+    top: 1480px;
+    left: 1038px;
+    padding: 32px;
+    border: 1px solid #DEDEDE;
+    border-radius: 24px; /* В Figma 24px! */
+    filter: drop-shadow(0px 30px 50px #EFF5FB);
+    background: #FFFFFF;
+    box-sizing: border-box;
+        /* Добавить фон */
+    background-image: 
+        url('images/article-image_6.png');
+    background-position: 
+        right -5px bottom -5px;
+    background-repeat: no-repeat;
+    background-size: 
+        112px 106px,
+        137px 121px;
+}
+
+.sidebar-videos-wrapper {
+    width: 218px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.sidebar-videos-heading {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #2963A3;
+}
+
+.sidebar-videos-heading-number {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.sidebar-videos-text {
+    width: 196px;
+    height: 80px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #011632;
+    margin: 0;
+}
+
+.sidebar-vedeos-heading-number{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #2963A3;
+}
+
+.sidebar-videos-price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+}
+
+.sidebar-videos-button {
+    width: 108px;
+    height: 48px;
+    background: #35B3A9;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.anxiety-tips{
+    margin-top: 24px;
+    width: 690px;
+    height: 256px;
+}
+
+.anxiety-tips-heading{
+    width: 463px;
+    height: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+}
+
+.anxiety-tips-text_1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin-top: 16px;
+}
+
+.anxiety-tips-text_2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin-top: 16px;
+}
+
+.anxiety-tips-text_1,
+.anxiety-tips-text_2 {
+    position: relative; /* для позиционирования точек */
+    padding-left: 32px; /* отступ для точки */
+    margin-top: 16px;
+}
+
+.anxiety-tips-text_1::before,
+.anxiety-tips-text_2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+.anxiety-tips-text_1::after,
+.anxiety-tips-text_2::after {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background: #03B2A5;
+    border-radius: 50%;
+}
+
+.article-image_8{
+    width: 690px;
+    height: 331px;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.article-image_8-subtext{
+    width: 460px;
+    height: 18px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #868686;
+    margin-top: 16px;
+}
+
+.reactions-text{
+    width: 691px;
+    height: 96px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin-top: 24px;
+}
+
+.image-text-container {
+    position: relative;
+    width: 691px;
+    height: 168px;
+    margin-top: 24px;
+}
+
+.article-image_9 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.article-image_9-text {
+    position: absolute;
+    left: 102px;
+    top: 24px;
+    width: 485px;
+    height: 96px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    z-index: 2;
+    font-style: italic; 
+}
+
+.therapy-text{
+    width: 691px;
+    height: 96px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin-top: 24px;
 }
